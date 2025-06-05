@@ -55,3 +55,8 @@ function university_adjust_queries($query)
 }
 
 add_action('pre_get_posts', 'university_adjust_queries');
+
+
+// Creating Program Post Type
+// 1. Register the post type in mu-plugins folder
+// 2. Create some programs in the admin
