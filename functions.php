@@ -60,3 +60,7 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // Creating Program Post Type
 // 1. Register the post type in mu-plugins folder
 // 2. Create some programs in the admin
+// 3. Update permalink structure(Settings -> Permalinks -> Save Changes)
+// 4. Test viewing a newly created program post in step 2. At this time the view is powered by single.php and we need to change it by creating a dedicated template file
+// 5. Create single-program.php in the theme folder
+// 6. As a starting point, copy the contents from single-event.php to single-program.php
