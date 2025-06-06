@@ -121,3 +121,5 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 3. Add a featured image to a professor using admin dashboard
 // 4. Modify single-professor.php to show the featured image
 // 5. Add a new image size for the professor portrait in functions.php
+// 6. Install plugin Regenerate Thumbnails. This will regenerate the thumbnails for the existing images
+// 7. Regenerate the thumbnails for the existing images by navigating to Tools -> Regenerate Thumbnails
