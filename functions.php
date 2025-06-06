@@ -18,6 +18,7 @@ function university_features()
     // register_nav_menu('footerLocationOne', 'Footer Location One');
     // register_nav_menu('footerLocationTwo', 'Footer Location Two');
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'university_features');
@@ -109,3 +110,9 @@ add_action('pre_get_posts', 'university_adjust_queries');
     // 1. Navigate to Related Programs field group and modify the location rules to show this field group if Post Type is equal to Event or Professor
     // 2. Add some programs to some professors using admin dashboard
     // 3. Modify single-program.php to show the related professors using a custom query
+
+
+// Creating a featured image for a professor
+// 1. Add this code segment  -> add_theme_support('post-thumbnails'); to the university_features function in functions.php
+// 2. Navigate to mu-plugins folder and add support to thumbnail
+// 3. Add a featured image to a professor using admin dashboard
