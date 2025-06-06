@@ -64,3 +64,6 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 4. Test viewing a newly created program post in step 2. At this time the view is powered by single.php and we need to change it by creating a dedicated template file
 // 5. Create single-program.php in the theme folder
 // 6. As a starting point, copy the contents from single-event.php to single-program.php
+// 7. Update the template file in necessary places. Change the texts and permalink function to get_post_type_archive_link('program')
+// 8. Create an archive template file (archive-program.php). If not archive.php will be used. So we need to create archive-program.php
+// 9. Copy the contents from archive-event.php to archive-program.php as a starting point
