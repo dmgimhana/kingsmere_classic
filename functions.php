@@ -78,3 +78,10 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 10. Order the programs alphabetically by title. The default query is almost good so we do not need to write a custom query. We just need to manipulate the default query.
 
 // Creating Relationships Between Post Types
+// 1. Create a new field group using ACF called Related Program
+// 2. Add a field called Related Program(s)
+// 3. Change field name to related_programs
+// 4. Change field type to relationship
+// 5. Set filter by post type to program
+// 6. Set filters to only search
+// 7. In the location section. Set the rules to show this field group if Post Type is equal to Event
