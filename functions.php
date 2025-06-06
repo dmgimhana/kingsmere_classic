@@ -124,3 +124,4 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 6. Install plugin Regenerate Thumbnails. This will regenerate the thumbnails for the existing images
 // 7. Regenerate the thumbnails for the existing images by navigating to Tools -> Regenerate Thumbnails
 // 8. Modify single-professor.php to use the new image size i.e the_post_thumbnail('professorPortrait');
+// 9. Modify single-program.php to use the new image size i.e the_post_thumbnail_url('professorLandscape');
