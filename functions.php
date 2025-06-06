@@ -38,6 +38,14 @@ add_action('after_setup_theme', 'university_features');
 
 function university_adjust_queries($query)
 {
+
+    if (!is_admin() and is_post_type_archive('program') and $query->is_main_query()) {
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+        $query->set('posts_per_page', -1); // Show all programs
+    }
+
+
     if (!is_admin() and is_post_type_archive('event') and $query->is_main_query()) {
         $today = date('Ymd');
         $query->set('meta_key', 'event_date');
@@ -66,4 +74,5 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 6. As a starting point, copy the contents from single-event.php to single-program.php
 // 7. Update the template file in necessary places. Change the texts and permalink function to get_post_type_archive_link('program')
 // 8. Create an archive template file (archive-program.php). If not archive.php will be used. So we need to create archive-program.php
-// 9. Copy the contents from archive-event.php to archive-program.php as a starting point
+// 9. Copy the contents from archive-event.php to archive-program.php as a starting point and do the necessary changes
+// 10. Order the programs alphabetically by title. The default query is almost good so we do not need to write a custom query. We just need to manipulate the default query.
