@@ -104,3 +104,6 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 5. Create single-professor.php in the theme folder
 // 6. As a starting point, copy the contents from single-event.php to single-professor.php
 // 7. Update the template file in necessary places.
+
+    // Creating a relationship between Professors and Programs
+    // 1.Navigate to Related Programs field group and modify the location rules to show this field group if Post Type is equal to Event or Professor
