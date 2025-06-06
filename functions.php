@@ -21,6 +21,7 @@ function university_features()
     add_theme_support('post-thumbnails');
     add_image_size('professorLandscape', 400, 260, true);
     add_image_size('professorPortrait', 480, 650, true);
+    add_image_size('pageBanner', 1500, 350, true);
 }
 
 
@@ -126,3 +127,10 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 8. Modify single-professor.php to use the new image size i.e the_post_thumbnail('professorPortrait');
 // 9. Modify single-program.php to use the new image size i.e the_post_thumbnail_url('professorLandscape');
 // 10. If you don't want center based cropping, use a plugin called manuel image crop by tomasz and change the sizes of professorLandscape or professorPortrait if you want to
+
+
+// Creating a dynammic background image for page banner
+// 1. Create a new field group using ACF called Page Banner
+// 2. Create two fields for page banner(Page Banner Background Image. Here the field type should be Image) and for the subtitle(Page Banner Subtitle)
+// 3. Set the location rules for the field Page Banner Background Image. It is kind of a trick here, Please watch the video
+// 4. Registed an image size for the page banner in functions.php by adding this code segment ->  add_image_size('pageBanner', 1500, 350, true);
