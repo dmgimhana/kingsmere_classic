@@ -93,3 +93,14 @@ add_action('pre_get_posts', 'university_adjust_queries');
         // Writing a custom query to get the related events to a program. There is no need to create another custom group and a custom field for this.
         // 1. Open single-program.php
         // 2. Write the custom query to get the related events
+
+
+
+// Creating Professors post type
+// 1. Register the post type in mu-plugins folder (NOTE: There is no need for an archive page for professors, so has_archive is removed, and because there is no archive there is no need for a rewrite slug)
+// 2. Create some professors in the admin
+// 3. Update permalink structure(Settings -> Permalinks -> Save Changes)
+// 4. Test viewing a newly created professor post in step 2. At this time the view is powered by single.php and we need to change it by creating a dedicated template file
+// 5. Create single-professor.php in the theme folder
+// 6. As a starting point, copy the contents from single-event.php to single-professor.php
+// 7. Update the template file in necessary places.
