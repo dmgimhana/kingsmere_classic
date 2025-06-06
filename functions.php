@@ -106,4 +106,6 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 7. Update the template file in necessary places.
 
     // Creating a relationship between Professors and Programs
-    // 1.Navigate to Related Programs field group and modify the location rules to show this field group if Post Type is equal to Event or Professor
+    // 1. Navigate to Related Programs field group and modify the location rules to show this field group if Post Type is equal to Event or Professor
+    // 2. Add some programs to some professors using admin dashboard
+    // 3. Modify single-program.php to show the related professors using a custom query
