@@ -85,3 +85,7 @@ add_action('pre_get_posts', 'university_adjust_queries');
 // 5. Set filter by post type to program
 // 6. Set filters to only search
 // 7. In the location section. Set the rules to show this field group if Post Type is equal to Event
+
+    // Showing Related Programs in the Single Event Template
+    // 1. Open single-event.php
+    // 2. Write the necessary code to get the related programs
