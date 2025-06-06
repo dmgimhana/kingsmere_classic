@@ -89,3 +89,7 @@ add_action('pre_get_posts', 'university_adjust_queries');
     // Showing Related Programs in the Single Event Template
     // 1. Open single-event.php
     // 2. Write the necessary code to get the related programs
+       
+        // Writing a custom query to get the related events to a program. There is no need to create another custom group and a custom field for this.
+        // 1. Open single-program.php
+        // 2. Write the custom query to get the related events
